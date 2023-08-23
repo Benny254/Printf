@@ -10,8 +10,8 @@
  * Return: Number of chars printed
  */
 int print_string(va_list args, char buffer[] __attribute__((unused)),
-		int flags __attribute__ ((unused)), int width __attribute__((unused)),
-		int precision __attribute__((unused)), int size __attribute__((unused)))
+		int flags, int width,
+		int precision, int size __attribute__((unused)))
 {
 	int len = 0, i;
 	char *str;
