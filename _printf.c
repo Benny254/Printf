@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	int j, printed = 0, count = 0;
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
-	char buffer[BUFF_SIZE];
+	char buffer[BUFFER_SIZE];
 
 	if (format == NULL)
 		return (-1);
@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 		if (format[j] != '%')
 		{
 			buffer[buff_ind++] = format[j];
-			if (buff_ind == BUFF_SIZE)
+			if (buff_ind == BUFFER_SIZE)
 				print_buffer(buffer, &buff_ind);
 			count++;
 		}
