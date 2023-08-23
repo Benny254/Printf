@@ -15,5 +15,5 @@ int print_percent(va_list args __attribute__((unused)),
 		int precision __attribute__((unused)), int size
 		__attribute__((unused)))
 {
-	return (write(1, "%%", 1));
+	return (write(1, "%", 1));
 }
